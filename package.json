@@ -1,0 +1,9 @@
+{
+  "name": "recharge-service",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npm --prefix backend install && npm --prefix mock-operator install && npm --prefix frontend install --include=dev && npm --prefix frontend run build",
+    "start": "START_MOCK=true node backend/src/server.js"
+  }
+}
